@@ -1,0 +1,42 @@
+Questions:
+
+1. Yes
+2. Everything
+3. The Exception e will end up catching everything and not allow the ArithmeticException to find specific exceptions.
+4a.1
+4b.4
+4c.3
+4d.2
+
+Excercises:
+1.
+List<int> l =  new List<int>;
+public static void readList(File file){
+	System.out.println(file);
+
+	try{
+	l.add(file)
+	}
+	catch(Exceptions e){	
+	}
+		
+}
+2. Modify:
+public static void cat(File file) {
+    RandomAccessFile input = null;
+    String line = null;
+
+    try {
+        input = new RandomAccessFile(file, "r");
+        if ((line = input.readLine()) != null) {
+            System.out.println(line);
+        }
+    } finally {
+        if (input != null) {
+            input.close();
+        }
+        else{
+        }
+    }
+}
+
